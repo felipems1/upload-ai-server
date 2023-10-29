@@ -19,55 +19,25 @@ Um pouco das tecnologias que foram utilizadas no projeto:
 
 ## 3 - Instalação e uso
 
-### Requisitos:
+Você precisa ter o [Node](https://nodejs.org/en/), o [Git](https://git-scm.com/) e algum gerenciador de pacotes([NPM](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm/) | [Yarn](https://classic.yarnpkg.com/lang/en/docs/install)) instalados em sua máquina.
 
-- [NodeJS](https://nodejs.org/en/)
-- [Npm](https://www.npmjs.com) ou [yarn](https://yarnpkg.com)
+```bash
+1. Clone o repositório:
+$ git clone https://github.com/felipems1/upload-ai-backend.git
 
-Clone o projeto em sua máquina e instale as dependências com o comando:
+2. Acesse a pasta e instale as dependências via terminal:
+$ yarn install / npm install
 
-```shell
-yarn ou npm install
+3. Em seguida, crie um arquivo .env, copiando o formato do arquivo .env.example:
+$ env.example -> .env
+
+4. Execute as migrations com o comando:
+$ yarn prisma migrate dev / npx prisma migrate dev
+
+5. Inicie a aplicação em modo de desenvolvimento:
+$ yarn dev / npm run dev
+
+6. O servidor será aberto em http://localhost:3333
 ```
 
-Em seguida, crie um arquivo **.env**, copiando o formato do arquivo **.env.example**:
-
-```
-env.example -> .env
-```
-
-
-Execute as migrations com o comando:
-
-```
-yarn prisma migrate dev
-
-ou
-
-npx prisma migrate dev
-```
-
-Para rodar o servidor localmente:
-
-```
-yarn dev
-
-ou
-
-npm run dev
-```
-
----
-
-#### As requisições podem ser testadas em programas como o [Insomnia](https://insomnia.rest/download), [Postman](https://www.postman.com), etc!
-
----
-
-## 4 - Endpoints
-
-| Método | Rota                  | Descrição                                            |
-| ------ | --------------------- | ------------------------------------                 |
-| GET    | /prompts              | get-prompt                                           |
-| POST   | /videos               | upload-video                                         | 
-| POST   | /videos/${videoId}/transcription    |     create-transcription               |
-| POST   | /ai/complete          | generate-ai-completion                               | 
+<p align="center">Projeto feito com ❤️ por <a href="https://www.linkedin.com/in/felipems12/">Felipe Moises</a></p>
