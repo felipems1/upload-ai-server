@@ -1,4 +1,4 @@
-# Upload AI - BackEnd
+<h1 align="center"> Upload AI - Back End </h1>
 
 ## 1 - Sobre
 
@@ -23,7 +23,7 @@ Você precisa ter o [Node](https://nodejs.org/en/), o [Git](https://git-scm.com/
 
 ```bash
 1. Clone o repositório:
-$ git clone https://github.com/felipems1/upload-ai-backend.git
+$ git clone https://github.com/felipems1/upload-ai-server.git
 
 2. Acesse a pasta e instale as dependências via terminal:
 $ yarn install / npm install
